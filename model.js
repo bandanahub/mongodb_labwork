@@ -13,3 +13,7 @@ const productSchema = new mongoose.Schema({
   category: { type: String, required: true },
   inStock: { type: Boolean, default: true }
 });
+
+// Creating and Exporting the Model
+const Product = mongoose.model('Product', productSchema);
+module.exports = Product;
